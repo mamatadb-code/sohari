@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--    css-->
+      <link rel="stylesheet" href="sohari.css">
+<!--    font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<!--  font style Lato from import google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    
+    <!--  font style Montserrat from import google font  -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+  /*      :root{
+            --primary-color:#047aed;
+             --secondary-color:#1c3fa8;
+             --dark-color:#002240;
+             --light-color:#f4f4f4;
+        }
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Lato', sans-serif; 
+            color:#333;
+            line-height: 1.6;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color:#333;
+        }
+        h1{
+            font-weight: 300;
+            line-height: 1.2;
+            margin: 10px0;
+        }
+        p{
+            margin: 10px 0;   
+        }
+        img{
+            width: 100%;
+        }
+/* Navbar ***********/
+        .navbar .flex{
+            justify-content: space-between;
+        }
+        .navbar{
+            background-color: var(--primary-color);
+            color:white;
+            height: 70px;
+        }
+        .navbar ul{
+            display: flex;
+        }
+        .navbar a{
+            color:#fff;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        .navbar a:hover{
+            border-bottom: 2px #fff solid; 
+        }
+/* Utilities **********/
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 0 40px;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .card{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow:0 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            color:#333;
+        }
+        .btn{
+            display: inline-block;
+            padding: 10px 30px;
+            cursor: pointer;
+            background: var(--primary-color);
+            color:#fff;
+            border: nonr;
+            border-radius: 5px;
+        }
+        .btn-outline{
+            background-color: transparent;
+            border:1px #fff solid;
+        }
+        .btn:hover{
+            transform: scale(0.98);
+        }
+        .grid-3{
+            grid-template-columns: repeat(3, 1fr)!imporant;
+        }
+        .text-center{
+            text-align: center;
+        }
+/*        margin*/
+        .my-1{
+          margin: 1rem 0;  
+        }
+        .my-2{
+          margin: 1.5rem 0;  
+        }
+        .my-3{
+          margin:2rem 0;  
+        }
+        .my-4{
+          margin: 2.5rem 0;  
+        }
+        .my-5{
+          margin: 3rem 0;  
+        }
+        .m-1{
+            margin: 1rem;
+        }
+        .m-2{
+            margin: 1.5rem;
+        }
+        .m-3{
+            margin: 2rem;
+        }
+        .m-4{
+            margin: 2.5rem;
+        }
+        .m-5{
+            margin: 3rem;
+        }
+/*padding******/
+        .py-1{
+         padding: 1rem 0;  
+        }
+        .py-2{
+        padding: 1.5rem 0;  
+        }
+        .py-3{
+        padding:2rem 0;  
+        }
+        .py-4{
+        padding: 2.5rem 0;  
+        }
+        .py-5{
+        padding: 3rem 0;  
+        }
+         .p-1{
+           padding: 1rem;
+        }
+        .p-2{
+          padding: 1.5rem;
+        }
+        .p-3{
+          padding: 2rem;
+        }
+        .p-4{
+           padding: 2.5rem;
+        }
+        .p-5{
+         padding: 3rem;
+        }
+/***backgrounds & colored buttons***/
+    .bg-primary,
+        .btn-primary {
+            background-color: var(--primary-color);
+            color:#fff;
+        }
+        .bg-secondary,
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color:#fff;
+        }
+        .bg-dark,
+        .btn-dark {
+            background-color: var(--dark-color);
+            color:#fff;
+        }
+        bg-light,
+        .btn-light {
+            background-color: var(--light-color);
+            color:black;
+        }
+         .bg-dark a,
+        .btn-dark a,
+        .bg-primary a,
+        .btn-primary a,
+         .bg-secondary a,
+        .btn-secondary a{
+            color:#fff;
+        }
+/****Text sizes****/
+        .lead{
+            font-size: 20px;
+        }
+        .sm{
+            font-size: 1rem;
+        }
+        .md{
+            font-size: 2rem;
+        }
+        .lg{
+            font-size: 3rem;
+        }
+        .xl{
+            font-size: 4rem;
+        }
+/* Section One Showcase ******/
+        .showcase{
+            height: 400px;
+            background-color:var(--primary-color);
+            color:#fff;
+            position: relative;
+        }
+        .showcase h1{
+            font-size: 40px; 
+        }
+        .showcase p{
+            margin: 20px 0;
+        }
+        .showcase .grid{
+            grid-template-columns: 55% 45%;
+            gap:30px;
+            overflow: visible;
+        }
+        .showcase-form{
+            position: relative;
+            top:60px;
+            height: 350px;
+            width: 400px;
+            padding: 40px;
+            z-index: 100;
+            justify-self: flex-end;
+        }
+        .showcase-form .form-control{
+            margin: 30px 0;   
+        }
+        .showcase-form input[type='text'],
+         .showcase-form input[type='email']{
+            border:0;
+            border-bottom:1px solid #b4becd;
+             width: 100%;
+             padding: 3px;
+             font-size: 16px;
+        }
+        .showcase-form input:focus{
+            outline: none;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .showcase::before,
+        .showcase::after{
+            content: '';
+            position: absolute;
+            height: 100px;
+            bottom:-70px;
+            right:0;
+            left:0;
+            background: #fff;
+            transform: skewY(-3deg);
+             -webkit-transform: skewY(-3deg);
+             -moz-transform: skewY(-3deg);
+             -ms-transform: skewY(-3deg);
+        }
+/*    Stats *******/
+        .stats{
+            padding-top:100px;
+        }  
+        .stats-heading{
+            max-width: 500px;
+            margin: auto;
+        }
+        .stats-grid-h3{
+            font-size: 35px;
+        }
+        .stats-grid-paragraph{
+            font-size: 20px;
+            font-weight: bold;
+        }
+/***** Cli ******/
+        .color-green-img{
+            background-color: greenyellow;
+        }
+        .cli .grid{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            
+        }
+        .cli .grid >*:first-child{
+            grid-column: 1 / span 2;
+            grid-row:  1/ span 2;
+        }
+        
+/******Section Cloud******/
+        .Orange Image{
+            background-color: orange;
+        }
+        .cloud .grid{
+            grid-template-columns: 4fr 3fr;
+        }
+/* ***** Languages *****/
+        .languages .flex{
+            flex-wrap: wrap;
+        }
+        .languages .card{
+            text-align: center;
+            margin: 18px 10px 40px;
+            transition: transform 0.2s ease-in;
+        }
+        .languages.card h4{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .languages .card:hover{
+            transform: translateY(-15px);
+        }
+/**** Footer ******/
+      .grid-3 {
+            grid-template-columns: repeat(3,1fr);
+        }
+        .footer .social a{
+            margin: 0 10px;
+        }
+/******* Tablets and Under*****/
+        @media(max-width:768px){
+/* showcase*/
+           .grid,
+            .showcase .grid,
+            .stats .grid,
+            .cli .grid,
+            .cloud .grid{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+            }
+            .showcase{
+                height:auto;
+            }
+            .showcase-text{
+                text-align: center;
+                margin-top: 40px;
+            }
+            .showcase-form{
+                justify-self: center;
+                margin: auto;
+            }
+            .cli .grid > *:first-child{
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+/*****Mobile******/
+        @media(max-width:500px){
+            .navbar{
+                height:110px;
+            }
+            
+            .navbar .flex{
+                flex-direction: column;
+            }
+            .navbar ul{
+                padding: 10px;
+                background-color: rgba(0,0,0,0.1);
+            }
+        }*/
+        
+        
+    </style>
+    </head>
+    <body>
+<!--  Navbar  -->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo"> Sohri</h1>
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="documentation.html">Documentation</a></li>
+                        <li> <a href="sohariFeatures.html">Features</a></li>
+                    
+                    </ul> 
+                </nav>
+            </div>
+        </div>
+<!--     Showcase Section One   -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1> Heading Text</h1>
+                <p class="showcase-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                <a href="#" class="btn btn-outline">Read More</a>
+           </div>
+            <div class="showcase-form card">
+                <h2> Request a Info</h2>
+                <form name="contact" method="POST" netlify-honeypot ="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                    <label> Don't fill this out if you are human:<input name="bot-field" />
+                    </label> 
+                    </p>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required/>
+                    </div>
+                         <div class="form-control">
+                         <input type="text" name="company name" placeholder="Company Name" required/>
+                    </div>
+                         <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required/>
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" value="send" class="btn btn-primary">
+                    </div>
+                </form>
+              </div>
+        </div>
+    </section>
+<!--   Section Stats ******* -->
+        <section class="stats">
+            <div class="container">
+            <h3 class="stats-heading text-center my-1"> Topic Heading</h3>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                   <i class="fas fa-server fa-3x"></i>
+                   <h3>10,323,405</h3>
+                   <p class="text-secondary">Environment</p>    
+                </div> 
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                   <h3>10,323,405</h3>
+                   <p class="text-secondary">Be mindful </p>    
+                </div> 
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                   <h3>10,323,405</h3>
+                   <p class="text-secondary">Projects</p>    
+                </div> 
+            </div>    
+            </div>
+        </section>
+<!-- CLI *****-->
+        <section class="cli">
+            <div class="container grid">
+                <div class="color-green-img"> Reduce, reuse, and recycle. Cut down on what you throw away</div>
+<!--                <img src="images" alt="cli-image" />-->
+                <div class="card">
+                    <h3> Plant a tree </h3>
+                </div>
+                <div class="card">
+                    <h3>  Shop wisely </h3>
+                </div>
+            </div> 
+        </section>
+<!--Cloud ********-->
+        <section class="cloud bg-primaary my-2 py-2">
+            <div class="container grid">
+                <div class="text-center">
+                    <h2 class="lg"> The Future of Nature:</h2>
+                    <p class="lead my-1">Lorem ipsum dolor sit amet, consetetur sadipscing </p>
+                    <a class="btn btn-dark" herf="#">Read More</a> 
+                </div>
+                
+<!--                <img src="" class="" alt="some cloud image"/>-->
+                <div class="orange-img"> Orange Image </div>
+            </div>
+        </section>
+<!--*****Language*****-->
+        <section class="languages">
+            <h2 class="md text-center my-2">Supported resource</h2>
+            <div class="container flex">
+                <div class="card">
+                    <h4>Tree</h4>
+<!--                    <img src=""/>-->
+                    <i class="fab fa-sourcetree" style="font-size:48px" "background-color:#5ED5AF;"></i>
+                </div>
+                <div class="card">
+                    <h4>Books</h4>
+<!--                    <img src=""/>-->
+                    <i class="fas fa-book-open "style="font-size:48px;"></i>
+                </div>
+                <div class="card">
+                    <h4>Art</h4>
+<!--                    <img src=""/>-->
+                    <i class="fas fa-paint-brush" style="font-size:48px;"></i>
+                </div>
+                <div class="card">
+                    <h4>News</h4>
+<!--                    <img src=""/>-->
+                    <i class="fab fa-pagelines" style="font-size:48px;"></i>
+                </div>
+                <div class="card">
+                    <h4>Comment</h4>
+<!--                    <img src=""/>-->
+                    <i class="fas fa-comment" style="font-size:48px;"></i>
+                </div>
+                <div class="card">
+                    <h4>Analysis </h4>
+<!--                    <img src=""/>-->
+                    <i class="fas fa-chart-area" style="font-size:48px;"></i>
+                </div>
+            </div>
+        </section>
+<!--****** Footer ***** -->
+        <footer class="footer bg-dark py-5">
+            <div class="container grid grid-3">
+                <div>
+                    <h1>Sohari</h1>
+                    <p>Copyright &copy; 2021</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="#">Features</a></li>
+                    <li> <a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="#"> <i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"> <i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"> <i class="fab fa-tweeter fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
